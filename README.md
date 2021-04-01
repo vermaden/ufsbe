@@ -10,6 +10,6 @@ ufsbe
 
 FreeBSD utility to manage Boot Environments on UFS filesystems.
 
-![ufsbe(8) Screenshot](https://github.com/vermaden/ufsbe/raw/master/screenshot.png)
+![ufsbe(8) Screenshot](screenshot.png)
 
 
