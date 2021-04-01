@@ -84,7 +84,7 @@ __get_root_dev() {
 __global_variables() {
   MOUNT=$( __get_root_dev )
   ROOTDEV=$( echo "${MOUNT}" | grep -o -E '^[a-z]+[0-9]+' | head -1 )
-  GPART_SHOW_ROOTDEV=$( gpart show -p -l "${ROOTDEV}" | grep "${PREFIX}/" )
+  GPART_SHOW_ROOTDEV=$( gpart show -p -l "${ROOTDEV}" 2> /dev/null | grep "${PREFIX}/" )
 }
 
 # SETUP HELP - 0 DEVICES MEANS YOU NEED TO SETUP PARTITIONS WITH LABELS
