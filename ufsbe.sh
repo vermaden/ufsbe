@@ -361,6 +361,7 @@ __sync() { # 1=SOURCE 2=TARGET
   local MNT_SOURCE=$( echo "${MOUNT_UFS}" | grep ${DISK_SOURCE} | awk '{print $2}' )
   local MNT_TARGET=$( echo "${MOUNT_UFS}" | grep ${DISK_TARGET} | awk '{print $2}' )
   unset MOUNT_UFS
+  echo "INFO: syncing '${1}' (source) => '${2}' (target) boot environments ..."
   rsync \
     -aHXAEUxSK \
     --open-noatime \
