@@ -129,7 +129,7 @@ __set_bootme_root() {
     echo "NOPE: failed to set 'bootme' flag on / filesystem"
     exit 1
   else
-    echo "INFO: flag 'bootme' succesfully set on / filesystem"
+    echo "INFO: flag 'bootme' successfully set on / filesystem"
   fi
 }
 
