@@ -307,7 +307,6 @@ __check_empty_be() { # 1=LABEL
       do
         local MNT_POINT=$( mount -t ufs -p | grep ${PROVIDER} | awk '{print $2}' )
         for FILE in ${MNT_POINT}/boot/kernel/kernel \
-                    ${MNT_POINT}/boot/loader.conf \
                     ${MNT_POINT}/etc/rc.conf \
                     ${MNT_POINT}/rescue/ls \
                     ${MNT_POINT}/bin/ls \
